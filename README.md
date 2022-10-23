@@ -32,16 +32,68 @@ once you have installed python open up your editor and create a new python file.
 **NOTE**
 IDLE comes built into python, just search for IDLE on your computer and you are all setup.
 
-# 5 Our Program Structure
+# 5 Program Structure 
+## 5.1 Importing pygame and initialising modules
+
+```python 
+import pygame 
+import random 
+from pygame.locals import * 
+pygame.init()
+__author__ = 'Mahmud Shuaib'
+```
+we begin by importing pygame, random and import all pygame modules, modules are python files that contain all code. The author dunder method, or double underscore method is a built in method to specify the creator of a program.  
+
+## 5.2 Creating Tuples to hold color reference 
+Next we create a set of data using tuples. Here we created the colors from RGB values if we look at white 
+for example it has the **RED**, **GREEN** and **BLUE** components at 255 which means all colors hence white. 
+To create random colors, we `import random` and use the `random.ranint` between 0 and 255. This will create random values and as such, we will always see a different color eachtime the code is run. 
+```python
+WHITE = (255, 255, 255)
+BLACK = (0, 0, 0)
+# set of random colors 
+RANDOM_BG_COLOR =    (random.randint(0,255),random.randint(0,255),random.randint(0,255))
+RANDOM_BG_COLOR_2 =  (random.randint(0,255),random.randint(0,255),random.randint(0,255))
+RANDOM_BG_COLOR_3 =  (random.randint(0,255),random.randint(0,255),random.randint(0,255))
+RANDOM_BG_COLOR_4 =  (random.randint(0,255),random.randint(0,255),random.randint(0,255))
+RANDOM_BG_COLOR_5 =  (random.randint(0,255),random.randint(0,255),random.randint(0,255))
+RANDOM_BG_COLOR_6 =  (random.randint(0,255),random.randint(0,255),random.randint(0,255))
+RANDOM_BG_COLOR_7 =  (random.randint(0,255),random.randint(0,255),random.randint(0,255))
+RANDOM_BG_COLOR_8 =  (random.randint(0,255),random.randint(0,255),random.randint(0,255))
+RANDOM_BG_COLOR_9 =  (random.randint(0,255),random.randint(0,255),random.randint(0,255))
+RANDOM_BG_COLOR_10 = (random.randint(0,255),random.randint(0,255),random.randint(0,255))
+RANDOM_BG_COLOR_11 = (random.randint(0,255),random.randint(0,255),random.randint(0,255))
+
+```
+## 5.3 Creating the Screen, window title, and filling our screen with a background color  
+Pygame draws content (text, images etc) on a screen called a surface here we create a surface called screen surface and pass a list for the WIDTH and HEIGHT. This can also be a tuple in `set_mode((WIDTH, HEIGHT))`
+we also create a caption using the `set_caption()` method. finally we Fill the screen with a backgound color using `screen_surface.fill('COLOR')`. COLOR is an RGB Tuple we need to pass in the `fill()` method
+
+```python
+# Screen Size 
+WIDTH = 480
+HEIGHT = 480
+# creating the display surface aka window 
+screen_surface = pygame.display.set_mode([WIDTH, HEIGHT], False)
+# create a caption 
+pygame.display.set_caption('Drawing a Grid')
+# fill the screen layer 0
+screen_surface.fill(BLACK)
+# creating 10 blocks 
+```
+
+
+# 6 Our Program Structure
 
 Here is the full version of the program
-You can find it here: <>
+You can find it here on [Github](https://github.com/mahmus-fifi/codefiles.git "Github link")
 
 ``` python
 import pygame 
 import random 
 from pygame.locals import * 
-__author__ = 'Mahmud Shuaib daddy mimi hubby fifi'
+pygame.init()
+__author__ = 'Mahmud Shuaib'
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 # set of random colors 
@@ -122,8 +174,5 @@ while start:
         # move the block        
 # exit program             
 pygame.quit()    
-
-
-
 
 ```
