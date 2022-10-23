@@ -1,6 +1,7 @@
 import pygame 
 import random 
 from pygame.locals import * 
+pygame.init()
 __author__ = 'Mahmud Shuaib daddy mimi hubby fifi'
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
