@@ -1,25 +1,25 @@
-# 1.0 Program That Displays Blocky Shapes on a Grid
+# Program That Displays Blocky Shapes on a Grid :cd:
 
-written by Mahmud Shuaib
+written by Mahmud K. Shuaib
 mail: 101touchapps@gmail.com
 
 Hi there, this program is a fun project that display blocks on a grid using **pygame**.
 pygame is a graphics and multimedia library written using SDL (Simple Direct Layer). It allows
-the user to use highlevel functionality by granting access to input devices and hardware such as keyboards, joystics, mouse, audio, graphic and text. You can findout more about pygame here: <https://www.pygame.org/docs/>
+the user to use highlevel functionality by granting access to input devices and hardware such as keyboards, joystics, mouse, audio, graphic and text. You can findout more about pygame here: [pygame website](https://www.pygame.org/docs/)
 
-![img1](https://i.imgur.com/6HnWz3O.png)
+![img1](https://i.imgur.com/6HnWz3O.png "screen shot of the grid program")
 screenshot of the program
 
-# 2.0 Downloading and Installing Python
+# 2 Downloading and Installing Python :snake:
 
 To follow this tutorial you should have a copy of Python and pygame installed. To download Python, Headover to
 <https://www.python.org> and download Python for your operating system.
-![img2](https://i.imgur.com/o7mlY6m.png)
-image showing pythons page
+![img2](https://i.imgur.com/o7mlY6m.png "image showing pythons webpage")
+image showing pythons splash page
 
-# 3.0 Installing Pygame
+# 3 Installing Pygame :video_game:
 
-To install pygame open a **Terminal** on Mac or command prompt on **PC** and type `pip install pygame` note, you need to have an active internet connection because the pip command will connect to <https://www.pypi.org> to get the latest version of pygame.
+To install pygame open a **Terminal** on Mac or command prompt on **PC** and type `pip install pygame` note, you need to have an active internet connection because the pip command will connect to [pypi](https://www.pypi.org) to get the latest version of pygame.
 
 # 4. Importing pygame and Creating Variables
 
@@ -27,10 +27,10 @@ once you have installed python open up your editor and create a new python file.
 
 1. Sublime Text3 Editor -  ***[Sublime](https://www.sublimetext.com/3)***
 2. Visual Studio Code- ***[vs code](https://code.visualstudio.com/)***
-3. Atom - [Atom](https://flight-manual.atom.io/getting-started/sections/installing-atom/)
-4. IDLE (Integrated Development and Learning Environment).
+3. Atom - ***[Atom](https://flight-manual.atom.io/getting-started/sections/installing-atom/)***
+4. IDLE, Integrated Development and Learning Environment.
 **NOTE**
-IDLE comes built into python, just search for IDLE and you are all setup.
+IDLE comes built into python, just search for IDLE on your computer and you are all setup.
 
 # 5 Our Program Structure
 
